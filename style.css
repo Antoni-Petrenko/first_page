@@ -1,0 +1,8 @@
+.space-between {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom {
+    justify-self: flex-end
+}

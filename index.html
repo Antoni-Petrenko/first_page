@@ -6,15 +6,175 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
     crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css">
   <title>Document</title>
 </head>
 
 <body>
 
   <body data-gr-c-s-loaded="true">
+
+
+
+
+    <!-- Modal Регистрация -->
+    <div class="modal fade" id="registration-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Регистрация</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="registration">
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label for="inputEmail4">Имя</label>
+                  <input type="text" class="form-control" id="name" placeholder="Имя" />
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputEmail4">Фамилия</label>
+                  <input type="text" class="form-control" id="sourName" placeholder="Фамилия" />
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputEmail4">Отчество</label>
+                  <input type="text" class="form-control" id="secName" placeholder="Отчество" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="inputAddress">Город</label>
+                  <input type="text" class="form-control" id="city" placeholder="Днепр" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputAddress">Пароль</label>
+                  <input type="password" class="form-control" id="inputAddress" placeholder="Пароль" />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputAddress">Повторите пароль</label>
+                  <input type="password" class="form-control" id="inputAddress" placeholder="Повторите пароль" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputAddress">Номер телефона</label>
+                  <input type="tel" class="form-control" id="inputAddress" placeholder="+38 (067) 000 - 0000" />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputAddress">Адрес e-mail</label>
+                  <input type="email" class="form-control" id="inputAddress" placeholder="****@***.ua" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="cardNumber">Номер карты для получения бонуса</label>
+                  <input type="number" class="form-control" id="cardNumber" placeholder="**** ** ** ****" />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputState">Как планируете привлекать клиентов</label>
+                  <select id="inputState" class="form-control">
+                    <option selected></option>
+                    <option>Через интернет</option>
+                    <option>Офлайн рекламой</option>
+                    <option>При живом общении</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" />
+                    <a href="#">Принимаю условия агентской рекламмы </a>
+                  </label>
+                </div>
+              </div>
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            <button type="submit" class="btn btn-primary" form="registration">Пиринять</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Регистрация end -->
+    <!-- Modal войти -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Регистрация</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="login">
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="inputEmail4">Логин</label>
+                  <input type="text" class="form-control" id="login" placeholder="Логин" />
+                </div>
+
+                <div class="form-group col-md-12">
+                  <label for="inputEmail4">Пароль</label>
+                  <input type="password" class="form-control" id="password" placeholder="Пароль" />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            <button type="submit" class="btn btn-primary" form="login">Пиринять</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal войти end -->
+    <!-- Modal Как это работает -->
+    <div class="modal fade" id="how-it-work-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Регистрация</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ol class="list-group">
+              <li class="list-group-item">1. После регистрации Вы получите Вашу уникальную ссылку для привлечения клиентов.</li>
+              <li class="list-group-item">2. Ваш клиент должен оставить заявку на сайте перейдя
+                <strong> только</strong> по вашей уникальной ссылке (либо вы сами можете оформить заявку за него, перейдя по своей
+                ссылке,
+                <strong>но только с его согласия</strong> ).</li>
+              <li class="list-group-item">3. На этом Ваша работа закончена, далее наши менеджеры работают с клиентом и доводят его до продажи, а Вы
+                <strong>получаете 10% от суммы заказа.</strong>
+              </li>
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Как это работает -->
+
+
+    <!-- Modal Как это работает end-->
+
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+      <a class="navbar-brand navbar-collapse" href="#">
+        <img src="./img/logo/logo-steko.svg" alt="Steko logo">
+      </a>
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -39,15 +199,19 @@
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+          </li> -->
+      </ul>
+
+      <button type="button" class="btn btn-primary mr-2" data-toggle="modal" data-target="#registration-modal">
+        Регистрация
+      </button>
+      <button class="btn btn-success my-2 my-sm-0" data-toggle="modal" data-target="#login-modal">
+        Войти
+      </button>
+
       </div>
     </nav>
-    <header id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" item-width="70%">
+    <header id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="margin-top: 50px;">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -55,21 +219,21 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./img/birthday_online.steko (1).jpg" class="d-block w-70" alt="...">
+          <img src="./img/steko_samsung_steko.com.ua (2).jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>First slide label</h5>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./img/steko_samsung_online.steko (1).jpg" class="d-block w-70" alt="...">
+          <img src="./img/birthday_steko.com.ua (1).jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Second slide label</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./img/онлайн стеко.png" class="d-block w-70" alt="...">
+          <img src="./img/steko_samsung_steko.com.ua (1).jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -87,41 +251,59 @@
     </header>
     <main role="main">
 
-      <div class="jumbotron">
+      <div class="jumbotron text-center">
         <div class="container">
-          <h1 class="display-3">Стань он-лайн партнером Steko!</h1>
-          <p>Что такое партнерская программа</p>
-          <p>
+          <h1 class="h1">Стань он-лайн партнером Steko!</h1>
+          <p class=" display-3">Что такое партнерская программа</p>
+          <p class="mb-5 h5">
             Партнерская программа — это легкий способ организации вашего пассивного дохода. Для того, чтобы участвовать в партнерской
             программе Steko, просто зарегистрируйтесь и начинайте привлекать клиентов.
           </p>
           <p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Регистрация »</a>
+            <button type="button" class="btn btn-success btn-lg mr-3" data-toggle="modal" data-target="#how-it-work-modal">
+              Как это работает ?
+            </button>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#registration-modal">
+              Регистрация »
+            </button>
           </p>
         </div>
       </div>
 
-      <div class="container">
+      <div class="container col-lg-10 ">
+        <h2 class="h1 mb-5">Как привлеч клиента?</h2>
         <div class="row">
-
-          <div class="col-md-4">
-            <h2>Социальные сети и тематические форумы</h2>
+          <div class=" col-md-3 space-between">
+            <h2>Есть сайт?</h2>
+            <p>Если у вас
+              <strong>есть сайт:</strong> просто разместите наш рекламный баннер на своем сайте или напишите рекомендацию со своей
+              партнерской ссылкой.
+            </p>
+            <div style="flex-grow: 1;"></div>
+            <p>
+              <a class="btn btn-secondary" href="#" role="button">View details »</a>
+            </p>
+          </div>
+          <div class=" col-md-3 space-between">
+            <h2>Социальные сети</h2>
             <p>Расскажите о нас на своих личных страницах в соц. сетях и разместите свою партнерскую ссылку. Если вы посещаете
               тематические форумы – поделитесь партнерской ссылкой с другими посетителями.
             </p>
+            <div style="flex-grow: 1;"></div>
             <p>
               <a class="btn btn-secondary" href="#" role="button">View details »</a>
             </p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3 space-between">
             <h2>E-mail рассылка</h2>
             <p>Разошлите письма своим друзьям, знакомым и клиентам. Вместе с партнерской ссылкой. Возможно, кто-то из них как
               раз сейчас хочет поменять окна.</p>
+              <div style="flex-grow: 1;"></div>
             <p>
               <a class="btn btn-secondary" href="#" role="button">View details »</a>
             </p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3 space-between">
             <h2>Сарафанное радио</h2>
             <p>Если ваши друзья или знакомые хотят установить новые окна, тогда им нужен проверенный производитель окон Steko.
               Посоветуйте им нашу продукцию и гарантированно получите вознаграждение от суммы их заказа. Вы даже сами можете
@@ -149,7 +331,7 @@
       crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"></script>
-      <script src="./index.js"></script>
+    <script src="./index.js"></script>
   </body>
 
 </html>
